@@ -1,9 +1,9 @@
 h1{
     color:red;
     background-color:black;
+    text-decoration: red underline;
 }
 
 p{
-    color:blue;
-    background-color:yellow;
+        color:blue;
 }
