@@ -54,3 +54,39 @@ input[type="password"]{
     background-color:aqua;
     color:black;
 }
+
+/* PSEUDO CLASS */
+/* HOVER */
+
+button:hover{
+    background-color:black;
+    color:white;
+}
+
+h3:hover{
+    text-decoration: none;
+}
+
+/* active */
+button:active{
+    background-color:#b92b27;
+    color:black;
+}
+
+p:active{
+    color:green;
+    font-weight:bold;
+}
+
+/* checked */
+
+input[type="radio"]:checked + label{
+    font-weight: bold;
+    color:#b92b27;
+}
+
+/* nth-of-type */
+
+.post:nth-of-type(2){
+    background-color:red;
+}
