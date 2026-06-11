@@ -1,0 +1,11 @@
+div{
+    height:200px;
+    width:500px;
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+}
+
+h1{
+    border: 2px dotted red;
+}
