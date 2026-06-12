@@ -4,8 +4,21 @@ div{
     border-width:2px;
     border-style:solid;
     border-color:black;
+    border-top-right-radius:15px;
+    border-bottom-left-radius: 15px;
+    padding-left:15px;
+    padding-top:15px;
+    margin:10px 20px 30px;
 }
 
 h1{
     border: 2px dotted red;
+
+}
+
+button{
+    border-radius:15px;
+    padding-left:15px;
+    padding-right:15px;
+    background-color: yellow;
 }
