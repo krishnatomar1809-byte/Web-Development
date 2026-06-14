@@ -1,13 +1,24 @@
-div{
-    height:100px;
-    width:100px;
-    background-color: green;
-    margin: 0 auto;
-    margin-top:10px;
-    transition: margin-top 2s ease-in-out 0.2s;
+section{
+    margin-top: 100px;
 }
 
-div:hover{
-    margin-top:400px;
-    background-color: pink;
+div{
+    height:50px;
+    width:200px;
+    text-align: center;
+    background-color: lightgreen;
+    border: 2px solid black;
+    margin:10px;
+}
+
+div:nth-of-type(2n){
+    background-color: aqua;
+}
+
+div:nth-of-type(3n){
+    background-color: bisque;
+}
+
+#one{
+    transform: rotate(45deg);
 }
