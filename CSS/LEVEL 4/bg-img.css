@@ -1,0 +1,29 @@
+div{
+    height:500px;
+    width:1000px;
+    margin:0 auto;
+}
+
+#contain{
+    background-image: url(view.avif);
+    background-size: contain;
+}
+h1{
+    color:white;
+}
+
+#cover{
+    background-image: url(view.avif);
+    background-size:cover;
+}
+#cov{
+    color:white;
+}
+
+#auto{
+    background-image: url(view.avif);
+    background-size:auto;
+}
+#au{
+    color:white;
+}
