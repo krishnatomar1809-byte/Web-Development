@@ -1,0 +1,32 @@
+.card{
+    width:200px;
+    border:2px solid black;
+    display:inline-block;
+    margin:5px;
+    box-shadow:2px 2px 10px black;
+    border-radius: 8px;
+    transition: 1s;
+
+}
+
+img{
+    width:100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.desc{
+    padding-left: 5px;
+}
+
+.card:hover{
+    box-shadow: 4px 4px 20px goldenrod;
+}
+
+h3{
+    color: aliceblue;
+}
+
+p{
+    color: aliceblue;
+}
