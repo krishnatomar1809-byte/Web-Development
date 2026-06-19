@@ -1,0 +1,51 @@
+div{
+    height:300px;
+    width:500px;
+    background-color: black;
+
+
+    /* animation-name:colanimate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: 3;
+    animation-direction: normal; */
+
+    /* animation: colanimate 2s ease-in 0s 3 normal; */
+}
+
+h1{
+    color:white;
+
+}
+/* 
+@keyframes colanimate{
+    from{
+        background-color: black;
+        font-size: 20px;
+        
+    }
+    to{
+        background-color: red;
+        font-size: 40px;
+    } */
+}
+
+@media(min-width:200px) and (max-width:400px){
+    div{
+        background-color: blueviolet;
+    }
+    h1{
+        color:black;
+    }
+}
+
+@media(orientation:portrait){
+    h1{
+        color:yellow;
+    }
+    div{
+        background-color:brown;
+    }
+}
+
