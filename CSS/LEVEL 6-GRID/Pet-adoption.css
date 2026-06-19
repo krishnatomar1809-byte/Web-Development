@@ -1,0 +1,43 @@
+
+h2{
+    color:orangered;
+}
+
+span{
+    color:goldenrod;
+}
+
+.card{
+    width:400px;
+    border:2px solid black;
+    display:inline-block;
+    margin:10px;
+    padding:10px;
+    border-radius: 20px;
+    transition: 1s;
+    
+
+}
+
+.card:hover{
+    box-shadow: 2px 2px 20px goldenrod;
+}
+
+img{
+    width:100%;
+    border-radius: 20px;
+}
+h4{
+    text-align: center;
+}
+
+#pets{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media(orientation: portrait){
+    #pets{
+        flex-wrap:wrap;
+    }
+}
