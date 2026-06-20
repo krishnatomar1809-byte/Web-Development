@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "Poppins", sans-serif;
+}
+
+.main_box{
+    background: url(photo.jpg);
+    height:100vh;    /*vh=viewpot height */
+    background-size: cover;
+}
+
+.btn_one i{
+    color:white;
+    font-size: 30px;
+    font-weight:700px;
+    position:absolute;
+    left:16px;
+    line-height:60px;  
+    cursor: pointer; 
+    transition: all 0.4s linear;
+}
+
+.sidebar_menu{
+    position:fixed;
+    height:100vh;
+    left:-390px;
+    background-color: rgba(255,255,255,0.2);
+    width:350px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.5);
+    transition: all 0.4s linear;
+}
+
+.sidebar_menu .logo{
+    position:absolute;
+    /* left:40px; */
+    font-size: 25px;
+    width:100%;
+    box-shadow: 0 0 5px rgba(255,255,255,0.5);
+    line-height:60px;
+    height:60px;
+}
+
+.sidebar_menu .logo a{
+    position:absolute;
+    left:40px;
+    color: white;
+    width: 100%;
+    text-decoration: none;
+}
+
+.sidebar_menu .btn_two i{
+    color: grey;
+    font-size: 30px;
+    font-weight:700px;
+    position:absolute;
+    left:320px;
+    line-height:60px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.sidebar_menu .menu{
+    position: absolute;
+    top:80px;
+    width:100%;
+}
+
+.sidebar_menu .menu li{
+    line-height:50px;
+    padding:10px 20px;
+    margin:5px;
+    font-size: 20px;
+}
+
+.sidebar_menu .menu i,a{
+    color:white;
+    text-decoration: none;
+}
+
+.sidebar_menu .menu i{
+    padding-right:8px; 
+}
+
+.sidebar_menu .social_media{
+    position: absolute;
+    left:25%;
+    bottom:80px;
+    font-size: 20px;
+    
+}
+
+.sidebar_menu .social_media i{
+    padding:5px 8px;
+    color: white;
+    opacity:0.7;
+}
+
+#check{
+    display:none;
+}
+
+
+.sidebar_menu .menu li:hover{
+    box-shadow:0 0 5px rgba(255,255,255,0.5);
+}
+
+.sidebar_menu .social_media i:hover{
+    transform: scale(2);
+    opacity: 1;
+}
+
+.btn_one i:hover{
+    font-size: 35px;
+}
+.btn_two i:hover{font-size: 35px;}
+
+#check:checked ~ .sidebar_menu{
+    left:0;
+}
+
+#check:checked ~ .sidebar_menu .btn_two i{
+    opacity: 1;
+}
+
+#check:checked ~ .btn_one i{
+    opacity: 0;
+}
