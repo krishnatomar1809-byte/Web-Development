@@ -11,7 +11,7 @@ div{
     animation-iteration-count: 3;
     animation-direction: normal; */
 
-    /* animation: colanimate 2s ease-in 0s 3 normal; */
+    animation: colanimate 2s ease-in 0s 3 normal;
 }
 
 h1{
