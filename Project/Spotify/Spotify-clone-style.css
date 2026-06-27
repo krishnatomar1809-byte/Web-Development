@@ -134,8 +134,11 @@ a{
     margin-top: 0.5rem;
     width:fit-content;
     background-color: white;
+    cursor: pointer;
 }
-
+.badge:hover{
+    box-shadow: 0 0 10px #ddd;
+}
 .sticky-nav{
     background-color: #121212;
     display:flex;
@@ -185,6 +188,7 @@ a{
     border-radius: 0.5rem;
     transition: 0.5s;
     margin-top:1rem;
+    cursor: pointer;
 }
 .card:hover{
    background-color: rgba(42,42,43,1);
@@ -222,9 +226,70 @@ a{
     display:flex;
 }
 
+
+
 .album{
     width:25%;
+    display:flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* justify-content: space-between; */
 }
+
+.album-img{
+    width: 64px;
+    
+}
+.album-img img{
+    width: 100%;
+    cursor: pointer;
+}
+
+
+.album-opt{
+    margin:0 12px 0 12px;
+    
+}
+.Song-title{
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.artist-name{
+    font-size: 12px;
+    cursor: pointer;
+    line-height: 1px;
+}
+
+.Song-title:hover{
+    text-decoration: underline;
+}
+.artist-name:hover{
+    text-decoration: underline;
+}
+
+
+.album-icon{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    /* padding-left: 5px; */
+    margin-left: 16px;
+    
+}
+
+.album-icon img{
+    height:25px;
+    margin-right: 16px;
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.album-icon img:hover{
+    opacity: 1;
+}
+
 
 .player{
     width:50%;
@@ -278,4 +343,53 @@ a{
     border-radius: 50%;
     margin-top: -5px;
     background-color: #1db954;
+}
+
+
+.control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control-icon img{
+    height:32px;
+    color:#ddd;
+    margin-right: 16px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.control-icon-miss{
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.control-icon img:hover{
+    color:white;
+    opacity: 1;
+    height:33px;
+}
+
+.control-bar{
+    appearance: none;
+    background-color: transparent;
+    width:92px;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+.control-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height:0.2rem;
+}
+
+.control-bar::-webkit-slider-thumb{
+    appearance:none;
+    background-color: #1db954;
+    height:0.8rem;
+    width:0.8rem;
+    border-radius: 50%;
+    margin-top: -5px;
 }
