@@ -20,10 +20,25 @@
 // }
 
 
-let age=14;
+// let age=14;
 
-if(age>=18){
-    console.log("you can vote")
+// if(age>=18){
+//     console.log("you can vote")
+// }else{
+//     console.log("you can't vote")
+// }
+
+
+//practice
+
+let size="XL";
+
+if(size==='S'){
+    console.log("Price is 50rs");
+}else if(size==='M'){
+    console.log("The Price is 100rs");
+}else if(size==='L'){
+    console.log("The price is 200rs");
 }else{
-    console.log("you can't vote")
+    console.log("The price is 250rs");
 }
