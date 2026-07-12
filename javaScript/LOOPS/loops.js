@@ -10,16 +10,19 @@
     
 // }
 
-let favmovie="avatar";
-let guess=prompt("Enter the movie");
-while((guess != favmovie) && (guess != "quit")){
+
+//Guess the movie 
+
+// let favmovie="avatar";
+// let guess=prompt("Enter the movie");
+// while((guess != favmovie) && (guess != "quit")){
     
-    guess=prompt("you r wring . please try again");
+//     guess=prompt("you r wring . please try again");
 
-}
+// }
 
-if(guess==favmovie){
-    console.log("congrats");
-}else{
-    console.log("you quit");
-}
+// if(guess==favmovie){
+//     console.log("congrats");
+// }else{
+//     console.log("you quit");
+// }
