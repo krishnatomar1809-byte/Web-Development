@@ -49,4 +49,4 @@ function conCat(str){
 
 }
 
-console.log(conCat(str));
+// console.log(conCat(str));
