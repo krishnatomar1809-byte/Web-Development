@@ -57,3 +57,24 @@ function randNum(n){
 
 console.log(randNum(n));
 
+
+// Arrow function Question 1
+
+let arr1=[84,74,69,88,95,92,62];
+let total=0;
+
+let sum= arr1=>{
+    for(num of arr1){
+        total+=num;
+    }
+
+    return total/arr1.length;
+}
+
+
+// Arrow Function evenOrNot
+
+let isEven=(n) =>{
+    return n%2==0;
+}
+
