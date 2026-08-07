@@ -46,6 +46,13 @@ h1=document.querySelector("h1");
 function changeColor(color,delay){
     return new Promise((resolve,reject)=>{
         setTimeout(()=>{
+
+
+            let num= Math.floor(Math.random()*10)+1;     //aab ye reject hoja num 3 se bada aaya
+            if(num>3){
+                reject("promise rejected");
+            }
+
         h1.style.color=color;
         console.log(`color was changed into ${color}`);
         resolve(`color was changed`);
@@ -82,10 +89,27 @@ function changeColor(color,delay){
 //after await and async
 
 async function demo(){
-    await changeColor("red",1000);
-    await changeColor("green",1000);
-    await changeColor("blue",1000);
-    await changeColor("purple",1000);
-    changeColor("orange",1000);
+    // await changeColor("red",1000);
+    // await changeColor("green",1000);
+    // await changeColor("blue",1000);
+    // await changeColor("purple",1000);
+    // changeColor("orange",1000);
+
+
+    try{
+        await changeColor("red",1000);
+        await changeColor("green",1000);
+        await changeColor("blue",1000);
+        await changeColor("purple",1000);
+        changeColor("orange",1000);
+    }catch(err){
+        console.log(err);
+        console.log("error caught");
+    }
+
+    let a=3
+    console.log(a);
+    console.log("new number: ", a+3);         // ye chalega hi nhi agar uper humara num > 3 hogya balki ye tho promise se related hi nhi h esliye isse bache se liye hum await function ko try me daal dete h 
+
 }
 
