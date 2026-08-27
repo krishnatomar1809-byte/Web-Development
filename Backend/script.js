@@ -12,13 +12,13 @@
 
 
 
-var giveMeAJoke = require('give-me-a-joke');
+// var giveMeAJoke = require('give-me-a-joke');
 
-// To get a random dad joke
-giveMeAJoke.getRandomDadJoke (function(joke) {
-    console.log(joke);
-});
+// // To get a random dad joke
+// giveMeAJoke.getRandomDadJoke (function(joke) {
+//     console.log(joke);
+// });
 
-import {sum , mul} from "./math.js"
+import {sum , mul} from "./math.js";
 
 console.log(sum(1,2));
