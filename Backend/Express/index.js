@@ -41,4 +41,17 @@ app.get("/:username/:id",(req,res)=>{
     let htmlStr= `<h1>Welcome to the page of @${username}.<h1>`;
 
     res.send(htmlStr);
+});
+
+
+// Query string
+
+app.get("/search",(req,res)=>{
+    let{q}=req.query;
+
+    if(!q){
+        res.send("<h1>Nothing Searched<h1>");
+    }
+
+    res.send(`<h1>Your Query is about ${q}<h1>`);           // URL= localhost:port/search?q=orange
 })
