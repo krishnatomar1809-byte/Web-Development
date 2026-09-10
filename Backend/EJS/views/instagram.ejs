@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Instagram</title>
+    </head>
+    <body>
+        <h1>This profile belongs to @<%=username%></h1>
+        <button>Follow</button>
+        <button>Message</button> 
+
+        <h2>Account which follows you</h2>
+        <ul>
+            <% for(let names of followers) { %>
+                 <li><%= names %></li> 
+            <% } %>
+        </ul>
+
+
+    </body>
+</html>

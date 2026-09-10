@@ -14,3 +14,15 @@ app.set("views", path.join(__dirname,"/views"));
 app.get("/",(req,res)=>{
     res.render("home.ejs");
 })
+
+app.get("/rolldice",(req,res)=>{
+    let diceval = Math.floor(Math.random()*6)+1;      // assume ki ye koi data aaya dataset se
+    res.render("rolldice.ejs" , {diceval});            //diceval ko ejs me pass kr rha taki ko render hokr web page pr htm file ke through show ho
+})
+
+app.get("/ig/:username", (req,res)=>{
+    const followers=["krishna","anshu","aviral","mushkan"];
+    const {username}=req.params;
+
+    res.render("instagram.ejs",{username ,followers});
+})
