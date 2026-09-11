@@ -3,6 +3,9 @@ const app=express();
 const port=8080;
 const path=require("path");
 
+app.use(express.static(path.join(__dirname,"/public/css")));
+app.use(express.static(path.join(__dirname,"/public/js")));
+
 
 app.listen(port,()=>{
     console.log(`port was listening ${port}`);
@@ -21,8 +24,15 @@ app.get("/rolldice",(req,res)=>{
 })
 
 app.get("/ig/:username", (req,res)=>{
-    const followers=["krishna","anshu","aviral","mushkan"];
+    // const followers=["krishna","anshu","aviral","mushkan"];
     const {username}=req.params;
+    const instadata=require("./data.json");
 
-    res.render("instagram.ejs",{username ,followers});
+    const data=instadata[username];        // yaha hum data me instadata ke username se related data store kr rhe h
+    if(data){
+        res.render("instagram.ejs",{data});
+    }
+    else{
+        res.render("error.ejs");
+    }
 })

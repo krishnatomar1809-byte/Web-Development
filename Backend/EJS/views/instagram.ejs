@@ -2,19 +2,31 @@
 <html>
     <head>
         <title>Instagram</title>
+        <link rel="stylesheet" href="/style.css">
     </head>
     <body>
-        <h1>This profile belongs to @<%=username%></h1>
+        <h1>This profile belongs to @<%=data.name%></h1>
         <button>Follow</button>
         <button>Message</button> 
 
-        <h2>Account which follows you</h2>
-        <ul>
-            <% for(let names of followers) { %>
-                 <li><%= names %></li> 
-            <% } %>
-        </ul>
+
+        <p>Follower = <%= data.followers %> &nbsp; &nbsp; &nbsp; Following = <%= data.following %></p>
+
+        <hr>
+
+        <%# for post %>
+
+        <% for(let post of data.posts){ %>
+            <img src="<%= post.image %>" alt="some post"/>
+
+             <p>Likes = <%= post.likes %> &nbsp; &nbsp; &nbsp; Comments = <%= post.comments %></p>
+
+        <% } %>
 
 
+
+        
+
+    <script src="/script.js"></script>
     </body>
 </html>
