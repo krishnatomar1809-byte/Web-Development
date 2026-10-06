@@ -1,3 +1,17 @@
+body{
+  background-color: rgb(39, 39, 40);
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid #646cff;
+    background-color: #1f1f1f;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
